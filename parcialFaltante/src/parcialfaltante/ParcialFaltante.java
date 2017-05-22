@@ -20,9 +20,11 @@ public class ParcialFaltante {
         int numero = Integer.parseInt(JOptionPane.showInputDialog("ingrese un numero"));
         int numero2 = Integer.parseInt(JOptionPane.showInputDialog("ingrese otro numero"));
         
-        int suma = numero + numero2;
-        
-        JOptionPane.showMessageDialog(null,"el resultado es: "+suma);
+      if(numero > numero2){
+        JOptionPane.showMessageDialog(null, " El numero mayor es " + numero);
+    }else{
+            JOptionPane.showMessageDialog(null, " El numero mayor es " + numero2);
+        }
     }
     
 }
